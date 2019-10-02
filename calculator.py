@@ -15,8 +15,12 @@ def calculator(a,op,b):
 	    print('Comando invalido')
 
 def main():
-	op = input('Escolha a opção desejada (sum / sub / mult / div / pow / rad ): ')
+	op = input('Escolha a opção desejada (sum / sub / mult / div / pow / rad / SAVE / EXIT): ')
+	if op == 'EXIT':
+	    exit()
 	a = input('Insira o primeiro valor: ')
 	b = input('Insira o segundo valor: ')
+	if op == 'SAVE':
+	    
 	print(calculator(float(a),op,float(b)))
 main()
